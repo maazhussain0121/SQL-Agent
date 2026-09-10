@@ -1,0 +1,14 @@
+.env
+.venv
+.python-version
+uv.lock
+pyproject.toml
+__pycache__
+frontend/node_modules
+frontend/public
+frontend/node_modules
+frontend/src/assets
+frontend/.oxlintrc.json
+frontend/vite.config.js
+
+

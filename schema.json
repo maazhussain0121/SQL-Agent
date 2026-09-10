@@ -1,0 +1,281 @@
+{
+  "database": "employee_dataset",
+  "tables": [
+    {
+      "table_name": "recruitment_data",
+      "description": "Stores job application information submitted by applicants.",
+      "columns": [
+        {
+          "name": "applicant_id",
+          "type": "INTEGER",
+          "nullable": false,
+          "primary_key": true
+        },
+        {
+          "name": "application_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "gender",
+          "type": "VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "date_of_birth",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "phone_number",
+          "type": "VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR(255)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "address",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "city",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "state",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "zip_code",
+          "type": "VARCHAR(20)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "country",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "education_level",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "years_of_experience",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "desired_salary",
+          "type": "NUMERIC(10,2)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "job_title",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "status",
+          "type": "VARCHAR(50)",
+          "nullable": true,
+          "primary_key": false
+        }
+      ]
+    },
+    {
+      "table_name": "employees_data",
+      "description": "Stores employee records, employment details, and performance information.",
+      "columns": [
+        {
+          "name": "emp_id",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "first_name",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "last_name",
+          "type": "VARCHAR(100)",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "start_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "exit_date",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "supervisor",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "ad_email",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "business_unit",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "employee_status",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "employee_type",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "pay_zone",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "employee_classification_type",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "termination_type",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "termination_description",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "department_type",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "division",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "dob",
+          "type": "DATE",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "state",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "job_function_description",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "gender_code",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "location_code",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "race_desc",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "marital_desc",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "performance_score",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "current_employee_rating",
+          "type": "INTEGER",
+          "nullable": true,
+          "primary_key": false
+        }
+      ]
+    }
+  ]
+}
