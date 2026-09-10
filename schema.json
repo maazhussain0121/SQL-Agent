@@ -19,19 +19,19 @@
         },
         {
           "name": "first_name",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "last_name",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "gender",
-          "type": "VARCHAR(20)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
@@ -43,13 +43,13 @@
         },
         {
           "name": "phone_number",
-          "type": "VARCHAR(20)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "email",
-          "type": "VARCHAR(255)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
@@ -61,31 +61,31 @@
         },
         {
           "name": "city",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "state",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "zip_code",
-          "type": "VARCHAR(20)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "country",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "education_level",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
@@ -97,19 +97,19 @@
         },
         {
           "name": "desired_salary",
-          "type": "NUMERIC(10,2)",
+          "type": "NUMERIC",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "job_title",
-          "type": "VARCHAR(100)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
           "name": "status",
-          "type": "VARCHAR(50)",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         }
@@ -120,31 +120,31 @@
       "description": "Stores employee records, employment details, and performance information.",
       "columns": [
         {
-          "name": "emp_id",
+          "name": "empid",
           "type": "INTEGER",
+          "nullable": false,
+          "primary_key": true
+        },
+        {
+          "name": "firstname",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "first_name",
-          "type": "VARCHAR(100)",
+          "name": "lastname",
+          "type": "CHARACTER VARYING",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "last_name",
-          "type": "VARCHAR(100)",
-          "nullable": true,
-          "primary_key": false
-        },
-        {
-          "name": "start_date",
+          "name": "startdate",
           "type": "DATE",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "exit_date",
+          "name": "exitdate",
           "type": "DATE",
           "nullable": true,
           "primary_key": false
@@ -162,55 +162,68 @@
           "primary_key": false
         },
         {
-          "name": "ad_email",
+          "name": "ademail",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "business_unit",
+          "name": "businessunit",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "employee_status",
+          "name": "employeestatus",
+          "type": "TEXT",
+          "description": "Current employment status.",
+          "allowed_values": [
+            "Active",
+            "Voluntarily Terminated",
+            "Leave of Absence",
+            "Terminated for Cause",
+            "Future Start"
+          ],
+          "nullable": true,
+          "primary_key": false
+        },
+        {
+          "name": "employeetype",
+          "type": "TEXT",
+          "nullable": true,
+          "primary_key": false,
+          "allowed_values":[
+            "Contract",
+            "Full-Time",
+            "Part-Time"
+          ]
+        },
+        {
+          "name": "payzone",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "employee_type",
+          "name": "employeeclassificationtype",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "pay_zone",
+          "name": "terminationtype",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "employee_classification_type",
+          "name": "terminationdescription",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "termination_type",
-          "type": "TEXT",
-          "nullable": true,
-          "primary_key": false
-        },
-        {
-          "name": "termination_description",
-          "type": "TEXT",
-          "nullable": true,
-          "primary_key": false
-        },
-        {
-          "name": "department_type",
+          "name": "departmenttype",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
@@ -234,43 +247,43 @@
           "primary_key": false
         },
         {
-          "name": "job_function_description",
+          "name": "jobfunctiondescription",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "gender_code",
+          "name": "gendercode",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "location_code",
+          "name": "locationcode",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "race_desc",
+          "name": "racedesc",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "marital_desc",
+          "name": "maritaldesc",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "performance_score",
+          "name": "performancescore",
           "type": "TEXT",
           "nullable": true,
           "primary_key": false
         },
         {
-          "name": "current_employee_rating",
+          "name": "currentemployeerating",
           "type": "INTEGER",
           "nullable": true,
           "primary_key": false

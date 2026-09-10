@@ -88,6 +88,7 @@ def analysis_user_question(
             - Use table and column names EXACTLY as they appear in the schema.
             - Never rename, guess, or invent tables or columns.
             - Verify every column against the provided schema before using it.
+            - For employees_data.employeestatus, use only the exact status values listed in the schema.
             - Generate only SELECT queries.
             - Do not add unnecessary filters or conditions.
             - Only apply conditions explicitly required by the user's question.
