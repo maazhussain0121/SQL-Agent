@@ -8,9 +8,6 @@ from main import agent, load_schema,MessageState
 app = FastAPI()
 
 
-# ============================================================
-# CORS
-# ============================================================
 
 app.add_middleware(
     CORSMiddleware,
@@ -24,17 +21,10 @@ app.add_middleware(
 )
 
 
-# ============================================================
-# REQUEST MODEL
-# ============================================================
-
 class QueryRequest(BaseModel):
     question: str
 
 
-# ============================================================
-# API
-# ============================================================
 @app.post("/query")
 def query_database(request: QueryRequest):
 
